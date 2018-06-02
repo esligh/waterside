@@ -1,0 +1,17 @@
+<!--普通模式-->
+<template name="newsStyle0">
+    <navigator url="/pages/user/detail?id={{ id }}&style={{ style }}&tag={{ tag }}">
+    <view class="user_item">
+        <view class="user_thumb">
+            <image class="user_image" src="{{ icons[0] }}"></image>
+        </view>
+        <view class="user_info">
+            <view class="user_title_large">{{ title }}</view>
+            <view class="user_desc">
+                <text wx:if="{{ tag }}" class="user_source">{{ tag }}</text>
+                <text class="publish_time">{{ date }}</text>
+            </view>
+        </view>
+    </view>
+    </navigator>
+</template>
